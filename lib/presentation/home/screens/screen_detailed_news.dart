@@ -38,7 +38,7 @@ class ScreenDetailedNews extends StatelessWidget {
             Container(
               height: MediaQuery.of(context).size.height * 0.40,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(20)),
+                borderRadius:const BorderRadius.all(Radius.circular(20)),
                 image: DecorationImage(
                   fit: BoxFit.fill,
                   image: NetworkImage(

@@ -20,18 +20,21 @@ mixin _$HomeEvent {
   TResult when<TResult extends Object?>({
     required TResult Function() getNewsData,
     required TResult Function(BuildContext context) navigateToNewsDetail,
+    required TResult Function(BuildContext context) navigateToSearchScreen,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? getNewsData,
     TResult? Function(BuildContext context)? navigateToNewsDetail,
+    TResult? Function(BuildContext context)? navigateToSearchScreen,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? getNewsData,
     TResult Function(BuildContext context)? navigateToNewsDetail,
+    TResult Function(BuildContext context)? navigateToSearchScreen,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -39,18 +42,22 @@ mixin _$HomeEvent {
   TResult map<TResult extends Object?>({
     required TResult Function(GetNewsData value) getNewsData,
     required TResult Function(NavigateToNewsDetail value) navigateToNewsDetail,
+    required TResult Function(NavigateToSearchScreen value)
+        navigateToSearchScreen,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(GetNewsData value)? getNewsData,
     TResult? Function(NavigateToNewsDetail value)? navigateToNewsDetail,
+    TResult? Function(NavigateToSearchScreen value)? navigateToSearchScreen,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(GetNewsData value)? getNewsData,
     TResult Function(NavigateToNewsDetail value)? navigateToNewsDetail,
+    TResult Function(NavigateToSearchScreen value)? navigateToSearchScreen,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -113,6 +120,7 @@ class _$GetNewsDataImpl implements GetNewsData {
   TResult when<TResult extends Object?>({
     required TResult Function() getNewsData,
     required TResult Function(BuildContext context) navigateToNewsDetail,
+    required TResult Function(BuildContext context) navigateToSearchScreen,
   }) {
     return getNewsData();
   }
@@ -122,6 +130,7 @@ class _$GetNewsDataImpl implements GetNewsData {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? getNewsData,
     TResult? Function(BuildContext context)? navigateToNewsDetail,
+    TResult? Function(BuildContext context)? navigateToSearchScreen,
   }) {
     return getNewsData?.call();
   }
@@ -131,6 +140,7 @@ class _$GetNewsDataImpl implements GetNewsData {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? getNewsData,
     TResult Function(BuildContext context)? navigateToNewsDetail,
+    TResult Function(BuildContext context)? navigateToSearchScreen,
     required TResult orElse(),
   }) {
     if (getNewsData != null) {
@@ -144,6 +154,8 @@ class _$GetNewsDataImpl implements GetNewsData {
   TResult map<TResult extends Object?>({
     required TResult Function(GetNewsData value) getNewsData,
     required TResult Function(NavigateToNewsDetail value) navigateToNewsDetail,
+    required TResult Function(NavigateToSearchScreen value)
+        navigateToSearchScreen,
   }) {
     return getNewsData(this);
   }
@@ -153,6 +165,7 @@ class _$GetNewsDataImpl implements GetNewsData {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(GetNewsData value)? getNewsData,
     TResult? Function(NavigateToNewsDetail value)? navigateToNewsDetail,
+    TResult? Function(NavigateToSearchScreen value)? navigateToSearchScreen,
   }) {
     return getNewsData?.call(this);
   }
@@ -162,6 +175,7 @@ class _$GetNewsDataImpl implements GetNewsData {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(GetNewsData value)? getNewsData,
     TResult Function(NavigateToNewsDetail value)? navigateToNewsDetail,
+    TResult Function(NavigateToSearchScreen value)? navigateToSearchScreen,
     required TResult orElse(),
   }) {
     if (getNewsData != null) {
@@ -243,6 +257,7 @@ class _$NavigateToNewsDetailImpl implements NavigateToNewsDetail {
   TResult when<TResult extends Object?>({
     required TResult Function() getNewsData,
     required TResult Function(BuildContext context) navigateToNewsDetail,
+    required TResult Function(BuildContext context) navigateToSearchScreen,
   }) {
     return navigateToNewsDetail(context);
   }
@@ -252,6 +267,7 @@ class _$NavigateToNewsDetailImpl implements NavigateToNewsDetail {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? getNewsData,
     TResult? Function(BuildContext context)? navigateToNewsDetail,
+    TResult? Function(BuildContext context)? navigateToSearchScreen,
   }) {
     return navigateToNewsDetail?.call(context);
   }
@@ -261,6 +277,7 @@ class _$NavigateToNewsDetailImpl implements NavigateToNewsDetail {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? getNewsData,
     TResult Function(BuildContext context)? navigateToNewsDetail,
+    TResult Function(BuildContext context)? navigateToSearchScreen,
     required TResult orElse(),
   }) {
     if (navigateToNewsDetail != null) {
@@ -274,6 +291,8 @@ class _$NavigateToNewsDetailImpl implements NavigateToNewsDetail {
   TResult map<TResult extends Object?>({
     required TResult Function(GetNewsData value) getNewsData,
     required TResult Function(NavigateToNewsDetail value) navigateToNewsDetail,
+    required TResult Function(NavigateToSearchScreen value)
+        navigateToSearchScreen,
   }) {
     return navigateToNewsDetail(this);
   }
@@ -283,6 +302,7 @@ class _$NavigateToNewsDetailImpl implements NavigateToNewsDetail {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(GetNewsData value)? getNewsData,
     TResult? Function(NavigateToNewsDetail value)? navigateToNewsDetail,
+    TResult? Function(NavigateToSearchScreen value)? navigateToSearchScreen,
   }) {
     return navigateToNewsDetail?.call(this);
   }
@@ -292,6 +312,7 @@ class _$NavigateToNewsDetailImpl implements NavigateToNewsDetail {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(GetNewsData value)? getNewsData,
     TResult Function(NavigateToNewsDetail value)? navigateToNewsDetail,
+    TResult Function(NavigateToSearchScreen value)? navigateToSearchScreen,
     required TResult orElse(),
   }) {
     if (navigateToNewsDetail != null) {
@@ -312,11 +333,154 @@ abstract class NavigateToNewsDetail implements HomeEvent {
 }
 
 /// @nodoc
+abstract class _$$NavigateToSearchScreenImplCopyWith<$Res> {
+  factory _$$NavigateToSearchScreenImplCopyWith(
+          _$NavigateToSearchScreenImpl value,
+          $Res Function(_$NavigateToSearchScreenImpl) then) =
+      __$$NavigateToSearchScreenImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({BuildContext context});
+}
+
+/// @nodoc
+class __$$NavigateToSearchScreenImplCopyWithImpl<$Res>
+    extends _$HomeEventCopyWithImpl<$Res, _$NavigateToSearchScreenImpl>
+    implements _$$NavigateToSearchScreenImplCopyWith<$Res> {
+  __$$NavigateToSearchScreenImplCopyWithImpl(
+      _$NavigateToSearchScreenImpl _value,
+      $Res Function(_$NavigateToSearchScreenImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? context = null,
+  }) {
+    return _then(_$NavigateToSearchScreenImpl(
+      context: null == context
+          ? _value.context
+          : context // ignore: cast_nullable_to_non_nullable
+              as BuildContext,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$NavigateToSearchScreenImpl implements NavigateToSearchScreen {
+  const _$NavigateToSearchScreenImpl({required this.context});
+
+  @override
+  final BuildContext context;
+
+  @override
+  String toString() {
+    return 'HomeEvent.navigateToSearchScreen(context: $context)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$NavigateToSearchScreenImpl &&
+            (identical(other.context, context) || other.context == context));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, context);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$NavigateToSearchScreenImplCopyWith<_$NavigateToSearchScreenImpl>
+      get copyWith => __$$NavigateToSearchScreenImplCopyWithImpl<
+          _$NavigateToSearchScreenImpl>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() getNewsData,
+    required TResult Function(BuildContext context) navigateToNewsDetail,
+    required TResult Function(BuildContext context) navigateToSearchScreen,
+  }) {
+    return navigateToSearchScreen(context);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getNewsData,
+    TResult? Function(BuildContext context)? navigateToNewsDetail,
+    TResult? Function(BuildContext context)? navigateToSearchScreen,
+  }) {
+    return navigateToSearchScreen?.call(context);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getNewsData,
+    TResult Function(BuildContext context)? navigateToNewsDetail,
+    TResult Function(BuildContext context)? navigateToSearchScreen,
+    required TResult orElse(),
+  }) {
+    if (navigateToSearchScreen != null) {
+      return navigateToSearchScreen(context);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(GetNewsData value) getNewsData,
+    required TResult Function(NavigateToNewsDetail value) navigateToNewsDetail,
+    required TResult Function(NavigateToSearchScreen value)
+        navigateToSearchScreen,
+  }) {
+    return navigateToSearchScreen(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetNewsData value)? getNewsData,
+    TResult? Function(NavigateToNewsDetail value)? navigateToNewsDetail,
+    TResult? Function(NavigateToSearchScreen value)? navigateToSearchScreen,
+  }) {
+    return navigateToSearchScreen?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetNewsData value)? getNewsData,
+    TResult Function(NavigateToNewsDetail value)? navigateToNewsDetail,
+    TResult Function(NavigateToSearchScreen value)? navigateToSearchScreen,
+    required TResult orElse(),
+  }) {
+    if (navigateToSearchScreen != null) {
+      return navigateToSearchScreen(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class NavigateToSearchScreen implements HomeEvent {
+  const factory NavigateToSearchScreen({required final BuildContext context}) =
+      _$NavigateToSearchScreenImpl;
+
+  BuildContext get context;
+  @JsonKey(ignore: true)
+  _$$NavigateToSearchScreenImplCopyWith<_$NavigateToSearchScreenImpl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
 mixin _$HomeState {
   bool get isLoading => throw _privateConstructorUsedError;
   dynamic get news => throw _privateConstructorUsedError;
-  Widget get loadingStatus => throw _privateConstructorUsedError;
-  dynamic get filteredNews => throw _privateConstructorUsedError;
+  bool get loadingStatus => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $HomeStateCopyWith<HomeState> get copyWith =>
@@ -328,11 +492,7 @@ abstract class $HomeStateCopyWith<$Res> {
   factory $HomeStateCopyWith(HomeState value, $Res Function(HomeState) then) =
       _$HomeStateCopyWithImpl<$Res, HomeState>;
   @useResult
-  $Res call(
-      {bool isLoading,
-      dynamic news,
-      Widget loadingStatus,
-      dynamic filteredNews});
+  $Res call({bool isLoading, dynamic news, bool loadingStatus});
 }
 
 /// @nodoc
@@ -351,7 +511,6 @@ class _$HomeStateCopyWithImpl<$Res, $Val extends HomeState>
     Object? isLoading = null,
     Object? news = freezed,
     Object? loadingStatus = null,
-    Object? filteredNews = freezed,
   }) {
     return _then(_value.copyWith(
       isLoading: null == isLoading
@@ -365,11 +524,7 @@ class _$HomeStateCopyWithImpl<$Res, $Val extends HomeState>
       loadingStatus: null == loadingStatus
           ? _value.loadingStatus
           : loadingStatus // ignore: cast_nullable_to_non_nullable
-              as Widget,
-      filteredNews: freezed == filteredNews
-          ? _value.filteredNews
-          : filteredNews // ignore: cast_nullable_to_non_nullable
-              as dynamic,
+              as bool,
     ) as $Val);
   }
 }
@@ -382,11 +537,7 @@ abstract class _$$HomeStateImplCopyWith<$Res>
       __$$HomeStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {bool isLoading,
-      dynamic news,
-      Widget loadingStatus,
-      dynamic filteredNews});
+  $Res call({bool isLoading, dynamic news, bool loadingStatus});
 }
 
 /// @nodoc
@@ -403,7 +554,6 @@ class __$$HomeStateImplCopyWithImpl<$Res>
     Object? isLoading = null,
     Object? news = freezed,
     Object? loadingStatus = null,
-    Object? filteredNews = freezed,
   }) {
     return _then(_$HomeStateImpl(
       isLoading: null == isLoading
@@ -417,11 +567,7 @@ class __$$HomeStateImplCopyWithImpl<$Res>
       loadingStatus: null == loadingStatus
           ? _value.loadingStatus
           : loadingStatus // ignore: cast_nullable_to_non_nullable
-              as Widget,
-      filteredNews: freezed == filteredNews
-          ? _value.filteredNews
-          : filteredNews // ignore: cast_nullable_to_non_nullable
-              as dynamic,
+              as bool,
     ));
   }
 }
@@ -432,21 +578,18 @@ class _$HomeStateImpl implements _HomeState {
   const _$HomeStateImpl(
       {required this.isLoading,
       required this.news,
-      required this.loadingStatus,
-      required this.filteredNews});
+      required this.loadingStatus});
 
   @override
   final bool isLoading;
   @override
   final dynamic news;
   @override
-  final Widget loadingStatus;
-  @override
-  final dynamic filteredNews;
+  final bool loadingStatus;
 
   @override
   String toString() {
-    return 'HomeState(isLoading: $isLoading, news: $news, loadingStatus: $loadingStatus, filteredNews: $filteredNews)';
+    return 'HomeState(isLoading: $isLoading, news: $news, loadingStatus: $loadingStatus)';
   }
 
   @override
@@ -458,18 +601,12 @@ class _$HomeStateImpl implements _HomeState {
                 other.isLoading == isLoading) &&
             const DeepCollectionEquality().equals(other.news, news) &&
             (identical(other.loadingStatus, loadingStatus) ||
-                other.loadingStatus == loadingStatus) &&
-            const DeepCollectionEquality()
-                .equals(other.filteredNews, filteredNews));
+                other.loadingStatus == loadingStatus));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      isLoading,
-      const DeepCollectionEquality().hash(news),
-      loadingStatus,
-      const DeepCollectionEquality().hash(filteredNews));
+  int get hashCode => Object.hash(runtimeType, isLoading,
+      const DeepCollectionEquality().hash(news), loadingStatus);
 
   @JsonKey(ignore: true)
   @override
@@ -482,17 +619,14 @@ abstract class _HomeState implements HomeState {
   const factory _HomeState(
       {required final bool isLoading,
       required final dynamic news,
-      required final Widget loadingStatus,
-      required final dynamic filteredNews}) = _$HomeStateImpl;
+      required final bool loadingStatus}) = _$HomeStateImpl;
 
   @override
   bool get isLoading;
   @override
   dynamic get news;
   @override
-  Widget get loadingStatus;
-  @override
-  dynamic get filteredNews;
+  bool get loadingStatus;
   @override
   @JsonKey(ignore: true)
   _$$HomeStateImplCopyWith<_$HomeStateImpl> get copyWith =>

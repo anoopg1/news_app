@@ -17,12 +17,8 @@ class HomeRepository implements HomeServices {
       final Response response =
           await http.get(Uri.parse(ApiEndpoints().newsUrl));
 
-      // print(response.body);
-
       if (response.statusCode == 200) {
         final dynamic jsonList = json.decode(response.body);
-
-        print(jsonList);
 
         return Right(jsonList);
       } else {

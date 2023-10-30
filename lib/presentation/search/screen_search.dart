@@ -25,6 +25,25 @@ class _ScreenSearchState extends State<ScreenSearch> {
         padding: const EdgeInsets.all(8.0),
         child: Column(
           children: [
+            Padding(
+              padding: EdgeInsets.only(
+                  right: MediaQuery.of(context).size.width * 0.80),
+              child: InkWell(
+                onTap: () => Navigator.pop(context),
+                child: Container(
+                  height: MediaQuery.of(context).size.height * 0.050,
+                  width: MediaQuery.of(context).size.width * 0.17,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(13),
+                      border: Border.all(width: 1.5, color: Colors.grey)),
+                  child: const Icon(
+                    Icons.keyboard_arrow_left,
+                    color: Colors.grey,
+                  ),
+                ),
+              ),
+            ),
+            kheight20,
             BlocBuilder<HomeBloc, HomeState>(
               builder: (context, state) {
                 return TextFormField(
@@ -40,9 +59,11 @@ class _ScreenSearchState extends State<ScreenSearch> {
                       for (int i = 0; i <= 10; i++) {
                         if (state.news['articles'][i]["title"]
                                 .toString()
+                                .toLowerCase()
                                 .contains(value) ||
                             state.news['articles'][i]["content"]
                                 .toString()
+                                .toLowerCase()
                                 .contains(value)) {
                           filteredNewsIndex.add(i);
 
